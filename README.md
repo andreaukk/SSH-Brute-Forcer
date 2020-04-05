@@ -6,26 +6,26 @@ Note: The brute force method is really bad just trys random strings with differe
 
 ### Single Ip Dictonary Attack
 ```
-python SSHBruteForce.py -i 127.0.0.1 -d True -p 2222 -U ./usernames.txt -P ./passwords.txt
+python SSHBruteForce.py -i 127.0.0.1 -d True -p 2222 -U ./usernames.txt -P ./passwords.txt -O resultsfile
 ```
 ### Single Ip Dictonary Attack Specifying threads and timeout
 ```
-python SSHBruteForce.py -i 127.0.0.1 -d True -p 2222 -U ./usernames.txt -P ./passwords.txt -t 15 -T 30
+python SSHBruteForce.py -i 127.0.0.1 -d True -p 2222 -U ./usernames.txt -P ./passwords.txt -t 15 -T 30 -O resultsfile
 ```
 
 ### Multiple Ip Dictonary Attack
 ```
-python SSHBruteForce.py -I ./targets.txt -d True -p 2222 -U ./usernames.txt -P ./passwords.txt -t 15 -T 30
+python SSHBruteForce.py -I ./targets.txt -d True -p 2222 -U ./usernames.txt -P ./passwords.txt -t 15 -T 30 -O resultsfile
 ```
 
 ### Single Ip BruteForce Attack
 ```
-python SSHBruteForce.py -i 127.0.0.1 -p 22 -a 100 -l 8
+python SSHBruteForce.py -i 127.0.0.1 -p 22 -a 100 -l 8 -O resultsfile
 ```
 
 ### Multiple Ip BruteForce Attack
 ```
-python SSHBruteForce.py -I targets.txt -p 22 -a 100 -l 8
+python SSHBruteForce.py -I targets.txt -p 22 -a 100 -l 8 -O resultsfile
 ```
 
 * Example of `targets.txt`:
